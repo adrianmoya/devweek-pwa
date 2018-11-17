@@ -2,7 +2,7 @@
 A repo for my talk for Endava Dev Week on PWAs
 
 ## Simple pwa
- 1. Add a service worker:
+### 1. Add a service worker:
 
 ```javascript
  if ('serviceWorker' in navigator) {
@@ -52,7 +52,38 @@ self.addEventListener('fetch', function(event) {
   );
 });
 ```
+### 2. Add manifest file:
 
+```json
+{
+  "short_name": "Maps",
+  "name": "Google Maps",
+  "icons": [
+    {
+      "src": "/images/icons-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/images/icons-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/maps/?source=pwa",
+  "background_color": "#3367D6",
+  "display": "standalone",
+  "scope": "/maps/",
+  "theme_color": "#3367D6"
+}
+```
+
+```html
+<link rel="manifest" href="/manifest.json">
+<meta name="theme-color">
+```
+
+The endava orange: #f67031
 
 RESOURCES:
 https://developers.google.com/web/progressive-web-apps/
