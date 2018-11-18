@@ -13,7 +13,7 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": "/devweek-pwa",
+  "start_url": "/",
   "background_color": "#f67031",
   "display": "standalone",
   "theme_color": "#f67031",
