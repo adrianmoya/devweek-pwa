@@ -2,6 +2,7 @@ var CACHE_NAME = 'my-pwa-cache-v1';
 var urlsToCache = [
   '/devweek-pwa/',
   'css/endava.css',
+  'manifest.json',
   'img/endava_logo.png',
   'https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css'
 ];
