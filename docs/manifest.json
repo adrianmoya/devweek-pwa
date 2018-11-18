@@ -3,19 +3,20 @@
   "name": "My PWA",
   "icons": [
     {
-      "src": "/img/mypwa-icon-192.png",
+      "src": "img/mypwa-icon-192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "/img/mypwa-icon-512.png",
+      "src": "img/mypwa-icon-512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
   ],
-  "start_url": "/",
+  "start_url": "/devweek-pwa",
   "background_color": "#f67031",
   "display": "standalone",
   "theme_color": "#f67031",
-  "orientation": "portrait"
+  "orientation": "portrait",
+  "scope": "/devweek-pwa"
 }
