@@ -87,16 +87,23 @@ The endava orange: #f67031
 
 ### 3. Push notification:
 
-```javascript
-self.addEventListener('push', function(event) {
-  if (event.data) {
-    console.log('This push event has data: ', event.data.text());
-  } else {
-    console.log('This push event has no data.');
-  }
-});
-```
+Goto online demo at https://adrianmoya.github.io/
+
+##Angular PWA support
+
+### 1. Convert an existing project
+
+`ng new mypwa`
+`ng add @angular/pwa`
+
+### 2. Check sw config options:
+
+https://angular.io/guide/service-worker-config
+
 
 RESOURCES:
 https://developers.google.com/web/progressive-web-apps/
+https://developers.google.com/web/tools/lighthouse/
+https://developers.google.com/web/tools/workbox/
 https://jakearchibald.github.io/isserviceworkerready/index.html
+
