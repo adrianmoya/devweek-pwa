@@ -4,7 +4,10 @@ A repo for my talk for Endava Dev Week on PWAs
 ## Simple pwa
 ### 1. Add a service worker:
 
+At the end of index.html, add this code:
+
 ```javascript
+<script language="javascript">
  if ('serviceWorker' in navigator) {
   window.addEventListener('load', function() {
     navigator.serviceWorker.register('/sw.js').then(function(registration) {
@@ -16,7 +19,10 @@ A repo for my talk for Endava Dev Week on PWAs
     });
   });
 }
+</script>
 ```
+
+Add this file at the root:
 
 sw.js:
 ```javascript
@@ -54,40 +60,42 @@ self.addEventListener('fetch', function(event) {
 ```
 ### 2. Add manifest file:
 
+Add a manifest.json file at the root:
+
 ```json
 {
-  "short_name": "Maps",
-  "name": "Google Maps",
+  "short_name": "My PWA",
+  "name": "My PWA",
   "icons": [
     {
-      "src": "/images/icons-192.png",
+      "src": "/img/mypwa-icon-192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "/images/icons-512.png",
+      "src": "/img/mypwa-icon-512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
   ],
-  "start_url": "/maps/?source=pwa",
-  "background_color": "#3367D6",
+  "start_url": "/",
+  "background_color": "#f67031",
   "display": "standalone",
-  "scope": "/maps/",
-  "theme_color": "#3367D6"
+  "theme_color": "#f67031",
+  "orientation": "portrait"
 }
 ```
 
+Add this in the head section of index.html:
+
 ```html
 <link rel="manifest" href="/manifest.json">
-<meta name="theme-color">
+<meta name="theme-color" content="#f67031">
 ```
-
-The endava orange: #f67031
 
 ### 3. Push notification:
 
-Goto online demo at https://adrianmoya.github.io/
+Go to online demo at https://adrianmoya.github.io/
 
 ##Angular PWA support
 
