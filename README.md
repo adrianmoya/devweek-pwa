@@ -1,5 +1,6 @@
 # devweek-pwa
-A repo for my talk for Endava Dev Week on PWAs
+A repo for my talk for Endava Dev Week on PWAs. 
+Deck available at https://speakerdeck.com/adrianmoya/pwa-fastrack-to-mobile-experience
 
 ## Simple pwa
 ### 1. Add a service worker:
